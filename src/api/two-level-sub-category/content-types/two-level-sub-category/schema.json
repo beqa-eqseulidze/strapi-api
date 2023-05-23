@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "two_level_sub_categories",
+  "info": {
+    "singularName": "two-level-sub-category",
+    "pluralName": "two-level-sub-categories",
+    "displayName": "Two-Level-Sub-Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "one_level_sub_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::one-level-sub-category.one-level-sub-category",
+      "inversedBy": "two_level_sub_categories"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "two_level_sub_category"
+    }
+  }
+}
