@@ -4,7 +4,8 @@
   "info": {
     "singularName": "main-category",
     "pluralName": "main-categories",
-    "displayName": "Main-Category"
+    "displayName": "Main-Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "one_level_sub_categories": {
       "type": "relation",

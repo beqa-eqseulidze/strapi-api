@@ -4,7 +4,8 @@
   "info": {
     "singularName": "one-level-sub-category",
     "pluralName": "one-level-sub-categories",
-    "displayName": "One-Level-Sub-Category"
+    "displayName": "One-Level-Sub-Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "main_categories": {
       "type": "relation",
