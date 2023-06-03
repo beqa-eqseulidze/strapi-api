@@ -211,9 +211,9 @@ CATEGORY
                         "data": {
                           "title": "test"   
                           "one_level_sub_categories":[2]  // this is optional, use it if you want to make relation with other category                 
-                        }                                // for example: "main_categories" items may have relations with       
+                        }                                // for example: "main_categories" items may have relation with       
                       }                                  // "one_level_sub_categories" items and vice versa.
-          responce:                                      // "two_level_sub_categories" items may have ralations with 
+          responce:                                      // "two_level_sub_categories" items may have ralation with 
                     {                                    // "one_level_sub_categories" items and vice versa
                       "data": {
                           "id": 3,
