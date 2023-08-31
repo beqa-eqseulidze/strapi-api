@@ -279,6 +279,7 @@ PRODUCT
             response:
                     {
         "data": [
+            
             {
                 "id": 1,
                 "attributes": {

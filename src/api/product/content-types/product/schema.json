@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "product"
+    "displayName": "product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,17 +21,19 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "price": {
-      "type": "float"
+      "type": "float",
+      "required": true
     },
     "quantity": {
       "type": "integer",
@@ -40,7 +43,7 @@
     "warranty": {
       "type": "string"
     },
-    "two_level_sub_category": {
+    "parent": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::two-level-sub-category.two-level-sub-category",

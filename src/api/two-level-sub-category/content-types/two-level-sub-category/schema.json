@@ -27,7 +27,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
-      "mappedBy": "two_level_sub_category"
+      "mappedBy": "parent"
     }
   }
 }
