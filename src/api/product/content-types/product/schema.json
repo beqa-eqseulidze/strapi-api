@@ -32,7 +32,7 @@
       ]
     },
     "price": {
-      "type": "float",
+      "type": "decimal",
       "required": true
     },
     "quantity": {
@@ -48,6 +48,20 @@
       "relation": "manyToOne",
       "target": "api::two-level-sub-category.two-level-sub-category",
       "inversedBy": "products"
+    },
+    "OnHome": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "inTopSlider": {
+      "type": "boolean",
+      "default": false
+    },
+    "oldPrice": {
+      "type": "decimal",
+      "min": 0,
+      "default": 0
     }
   }
 }
